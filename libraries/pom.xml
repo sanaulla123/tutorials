@@ -228,6 +228,11 @@
             <version>${commons.io.version}</version>
         </dependency>
         <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>${commons.dbutils.version}</version>
+        </dependency>        
+        <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-core</artifactId>
             <version>${flink.version}</version>
@@ -369,7 +374,7 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>1.4.195</version>
+            <version>${h2.version}</version>
         </dependency>
         <dependency>
             <groupId>pl.pragmatists</groupId>
@@ -480,22 +485,22 @@
             <groupId>org.eclipse.jetty.websocket</groupId>
             <artifactId>websocket-server</artifactId>
             <version>${jetty.version}</version>
-        </dependency>    
+        </dependency>
         <dependency>
             <groupId>org.eclipse.jetty.websocket</groupId>
             <artifactId>websocket-client</artifactId>
             <version>${jetty.version}</version>
-        </dependency>    
+        </dependency>
         <dependency>
             <groupId>org.eclipse.jetty.websocket</groupId>
             <artifactId>websocket-api</artifactId>
             <version>${jetty.version}</version>
-        </dependency>    
+        </dependency>
         <dependency>
             <groupId>org.eclipse.jetty.websocket</groupId>
             <artifactId>websocket-common</artifactId>
             <version>${jetty.version}</version>
-        </dependency>    
+        </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-continuation</artifactId>
@@ -505,7 +510,7 @@
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-util</artifactId>
             <version>${jetty.version}</version>
-        </dependency>        
+        </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-api</artifactId>
@@ -514,6 +519,11 @@
             <type>jar</type>
         </dependency>
         <!-- /Vaadin -->
+        <dependency>
+            <groupId>net.agkn</groupId>
+            <artifactId>hll</artifactId>
+            <version>${hll.version}</version>
+        </dependency>
     </dependencies>
     <properties>
         <multiverse.version>0.7.0</multiverse.version>
@@ -530,6 +540,8 @@
         <jetty.version>9.4.3.v20170317</jetty.version>
         <httpclient.version>4.5.3</httpclient.version>
         <commons.io.version>2.5</commons.io.version>
+        <commons.dbutils.version>1.6</commons.dbutils.version>
+        <h2.version>1.4.196</h2.version>
         <jetty.version>9.4.2.v20170220</jetty.version>
         <httpclient.version>4.5.3</httpclient.version>
         <commons.io.version>2.5</commons.io.version>
@@ -552,6 +564,7 @@
         <vaadin.plugin.version>8.0.6</vaadin.plugin.version>
         <vaadin.theme>mytheme</vaadin.theme>
         <!-- /Vaadin -->
+        <hll.version>1.6.0</hll.version>
     </properties>
     <profiles>
         <!-- Vaadin -->
