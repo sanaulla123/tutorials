@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class Java9ObjectsAPIUnitTest {
-
+    
     @Test
     public void givenNullObject_whenRequireNonNullElse_thenElse(){
         assertThat(Objects.<List>requireNonNullElse(null, Collections.EMPTY_LIST),
